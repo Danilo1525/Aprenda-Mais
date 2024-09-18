@@ -1,0 +1,82 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo2.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div class="cabeça">
+        <div class="logo">
+            <img src="img/logo.png" id="logo2">
+        </div>
+        <div class="menu">
+            <div class="icones">
+                <img src="img/search.png" class="pesquisa">
+                <img src="img/user.png" class="pesquisa">
+            </div>
+            <div class="navega">
+                <a class="click" href="index.html"><span>Ínicio</span></a>
+                |
+                <a class="click" href="#Conhecimento"><span>Categoria</span></a>
+                |
+                <a class="click" href="#area"><span>Áreas de Conhecimento</span></a>
+                |
+                <a class="click">Ajuda</a>
+            </div>
+        </div>
+    </div>
+    <main class="tudao">
+        <form>
+            <div class="container">
+                <div class="titulo">Conversor de Moedas</div>
+                <div class="inputs">
+                    <label>Moeda Base:</label>
+                    <input list="moedasB" required />
+                    <datalist id="moedasB">
+                        <option value="Real"></option>
+                        <option value="Dolar"></option>
+                        <option value="Euro"></option>
+                    </datalist>
+                </div>
+                <div class="inputs">
+                    <label>Moeda a Converter:</label>
+                    <input list="moedasC" required />
+                    <datalist id="moedasC">
+                        <option value="Real"></option>
+                        <option value="Dolar"></option>
+                        <option value="Euro"></option>
+                    </datalist>
+                </div>
+                <div class="inputs">
+                    <label>Valor a Converter:</label>
+                    <input type="number" id="valor" step="0.01" required />
+                </div>
+                <button type="button" onclick="Conversor()">Calcular</button>
+                <button type="button" class="voltar" onclick="history.back()">Voltar</button>
+                <div class="result" id="resultado"></div>
+            </div>
+        </form>
+    </main>
+    <div class="rodape">
+        <div class="logo">
+            <img src="img/logo.png" id="logo2">
+        </div>
+        <div class="menu">
+            <div class="icones">
+                <img src="img/fb.png">
+                <img src="img/instagram.png">
+                <img src="img/twitter.png">
+                <img src="img/youtube.png">
+            </div>
+            <div class="navega">
+                <span>Desenvolvido por IFMS - Campus Dourados</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
